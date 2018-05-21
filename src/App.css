@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+.mainDiv{
+  height: 400px;
+  width: 400px;
+  overflow: auto;
+  border: 1px solid #524f4e;
+  border-radius: 3px;
+  margin: 5px;
+}
+.word{
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 2em;
+  font-family: 'Comfortaa', cursive;
+  color: #524f4e;
+}
+.word:nth-child(odd){
+  border: 2px solid #FF50E5;
+}
+.word:nth-child(even){
+  border: 2px solid rgba(30,255,188,1);
+}
+input{
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 30px;
+  border: 3px solid #524f4e;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .25) inset,0 2px 10px rgba(0, 0, 0, .25);
+  border-radius : 10px;
+  background: rgba(255, 255, 255, .5);
+  appearance : none;
+  outline: none;
+  color: #333;
+  width: 20%;
+}
+body {background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
+h1, h3{
+  font-family: 'Comfortaa', cursive;
+  color: #524f4e;
+  font-weight: 300;
+}
+h1{
+  font-size: 2.5em;
+}
+.containerPlay{
+  white-space:nowrap;
+}
+.Page{
+  /*overflow:hidden;*/
+}
+.button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 15px 30px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(30,255,188,1);
+  background: rgba(255,255,255,1);
+  transition: color .3s, background .5s;
+}
+a:hover {
+  animation: stripes .75s infinite linear;
+  background: linear-gradient(45deg, rgba(30,255,188,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, rgba(30,255,188,1) 50%,      rgba(30,255,188,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1));
+  background-size: 10px 10px;
+  color: #FF50E5;
+}
+@keyframes stripes {
+  0% {background-position: 0 0;}
+  100% {background-position: 50px 0;}
+}
